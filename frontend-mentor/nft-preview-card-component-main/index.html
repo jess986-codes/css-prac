@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          class="card-img"
+          src="images/image-equilibrium.jpg"
+          alt="equllibrium"
+        />
+        <div class="card-description">
+          <h1>Equllibrium #3429</h1>
+          <p>Our Equillibrium collection promotes balance and calm.</p>
+        </div>
+        <div class="card-details">
+          <div class="eth card-details-flex">
+            <img src="images/icon-ethereum.svg" alt="ethereum" /> 0.041 ETH
+          </div>
+          <div class="days-left card-details-flex">
+            <img src="images/icon-clock.svg" alt="clock" /> 3 days left
+          </div>
+        </div>
+        <hr
+          style="
+            background-color: hsl(215, 32%, 27%);
+            height: 2px;
+            border: none;
+            margin-top: 32px;
+          "
+        />
+        <div class="card-creator">
+          <img
+            class="card-creator-img"
+            src="images/image-avatar.png"
+            alt="profile image"
+          />
+          <p>Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

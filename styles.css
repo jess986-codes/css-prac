@@ -1,0 +1,19 @@
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background-color: #a3e4db;
+  border: hotpink 2px solid;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.container > div {
+  background-color: #fff8f3;
+  padding: 16px;
+  box-sizing: border-box;
+}
