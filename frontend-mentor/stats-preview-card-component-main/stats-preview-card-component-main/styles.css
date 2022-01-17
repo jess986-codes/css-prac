@@ -1,40 +1,74 @@
-body {
-  background-color: hsl(233, 47%, 7%);
-  color: #fff;
-  font-family: "Inter", sans-serif;
-}
-
 h1 {
-  font-weight: 700;
+  font-size: 40px;
 }
 
-img {
-  width: 100%;
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
 }
 
-.container-flex {
+.container {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  color: #fff;
+  font-family: Inter;
 }
 
-.status-card {
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: hsl(244, 38%, 16%);
+  height: 60%;
+  width: 70%;
   border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
-.col-contents {
-  width: 80%;
+.card-summary {
+  padding: 5rem;
 }
 
-.col-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5rem;
+.purple-bold {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-summary-desc {
+  width: 40ch;
+  line-height: 28px;
+  margin-bottom: 6rem;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  border: none;
+}
+
+th {
+  font-size: 24px;
+}
+
+td {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-img {
+  background-image: linear-gradient(
+      hsla(276, 100%, 32%, 0.5),
+      hsla(276, 100%, 32%, 0.5)
+    ),
+    url("./images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 16px 16px 0;
 }
