@@ -1,0 +1,40 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+.container-flex {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-card {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 16px;
+}
+
+.col-contents {
+  width: 80%;
+}
+
+.col-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
