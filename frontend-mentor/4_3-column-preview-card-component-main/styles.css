@@ -1,0 +1,80 @@
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 24px;
+  width: 24ch;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card-group {
+  background-color: beige;
+  width: 50%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.card {
+  padding: 4rem;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 12px 0 0 12px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 12px 12px 0;
+}
+
+.learn-more-btn {
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 40px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 6rem;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.sedans > .learn-more-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs > .learn-more-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury > .learn-more-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.learn-more-btn:hover {
+  background-color: #bf8b67;
+  color: #fff;
+}
