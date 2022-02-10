@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="flex container">
+      <div class="flex flex-column content">
+        <img src="images/logo.svg" alt="logo" />
+        <div class="flex flex-column calculator-container">
+          <div class="flex flex-column input-group">
+            <div class="flex flex-column input--bill">
+              <label for="bill">Bill</label>
+              <input class="bill" name="bill" type="number" placeholder="0" />
+            </div>
+            <div class="flex flex-column input--tip">
+              <label for="tip">Select Tip %</label>
+              <div class="tip--options">
+                <button class="tip--preset">5%</button>
+                <button class="tip--preset">10%</button>
+                <button class="tip--preset">15%</button>
+                <button class="tip--preset">25%</button>
+                <button class="tip--preset">50%</button>
+                <input class="tip--custom" type="number" placeholder="Custom" />
+              </div>
+            </div>
+            <div class="flex flex-column input--people">
+              <div class="flex flex-space-between">
+                <label for="people">Number of People </label>
+                <span class="validation-error">Can't be zero</span>
+              </div>
+              <input
+                class="people"
+                name="people"
+                type="number"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div class="flex flex-column result-group">
+            <div class="flex flex-column amount-group">
+              <div class="flex tip-amount">
+                <div class="result-label">
+                  <label for="amount">Tip Amount</label>
+                  <span>/ person</span>
+                </div>
+                <div class="result tip-result">$0.00</div>
+              </div>
+              <div class="flex tip-total">
+                <div class="result-label">
+                  <label for="total">Total</label>
+                  <span>/ person</span>
+                </div>
+                <div class="result bill-result">$0.00</div>
+              </div>
+            </div>
+            <button class="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
