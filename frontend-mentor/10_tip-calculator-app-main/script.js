@@ -19,10 +19,9 @@ $(".people").on("keyup", function () {
 });
 
 $(".reset").click(function () {
-  $(".bill").val("");
-  $(".tip--custom").val("");
-  $(".people").val("");
-  calculateTip();
+  bill = $(".bill").val("");
+  tip = $(".tip--custom").val("");
+  people = $(".people").val("");
   $(".result").text("$0.00");
 });
 
@@ -44,13 +43,13 @@ function calculateTip() {
     $(".people").removeClass("error-input");
 
     tipAmount = billFloat * tipFloat;
-    tipPp = (tipAmount / peopleInt).toFixed(2);
+    tipPp = tipAmount / peopleInt;
 
     billTotal = billFloat + tipAmount;
-    billPp = (billTotal / peopleInt).toFixed(2);
+    billPp = billTotal / peopleInt;
 
-    tipResult = !isNaN(tipPp) ? String(tipPp) : "0.00";
-    billResult = !isNaN(billPp) ? String(billPp) : "0.00";
+    tipResult = !isNaN(tipPp) ? String(tipPp.toFixed(2)) : "0.00";
+    billResult = !isNaN(billPp) ? String(billPp.toFixed(2)) : "0.00";
 
     $(".tip-result").text(`$${tipResult}`);
     $(".bill-result").text(`$${billResult}`);
@@ -61,5 +60,3 @@ function calculateTip() {
     $(".people").addClass("error-input");
   }
 }
-
-function calculateTotal() {}
